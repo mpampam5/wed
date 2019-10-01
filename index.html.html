@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- meta -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Didi & Ani</title>
+  <!-- vendor css -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+  <link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="plugins/animate/animate.min.css">
+  <!-- plugins css -->
+  <link href="plugins/ytplayer/jquery.mb.YTPlayer.min.css" rel="stylesheet">
+  <link href="plugins/owl-carousel/css/owl.carousel.min.css" rel="stylesheet">
+  <!-- theme css -->
+  <link rel="stylesheet" href="css/theme.css">
+  <link rel="stylesheet" href="css/custom.css">
+
+  <style media="screen">
+
+  .heading p{
+    color :#000000;
+  }
+    .image-s
+    {
+      position: absolute;
+      left:-120px;
+      top:850px;
+    }
+
+    .image-s img{
+      opacity: 0.2;
+      z-index:-999
+    }
+
+
+    @media (max-width: 500px) {
+      .image-s
+      {
+        position: absolute;
+        left:-70px;
+        top:290px;
+      }
+
+      .image-s img{
+        opacity: 0.2;
+        z-index:-999
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- main -->
+  <section class="bg-primary promo promo-subscribe">
+    <div class="container">
+      <h3>BISMILLAHIRRAHMANIRRAHIM, SAYA UNDANG KI SEMUA DI ACARA NIKAHAN KU</h3>
+    </div>
+  </section>
+
+  <section class="bg-image bg-image-sm section-streamer player p-y-65" style="background-image: url('img/didi.jpg');" data-property="{videoURL:'PTsengp9CQ8',containment:'self',mute:true,stopMovieOnBlur:false, showControls: false, realfullscreen: true, showYTLogo: false, quality: 'hd1080',autoPlay:true,loop:true,opacity:1}">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="video-play video-live" style="background-image: url('img/didi.jpg');background-size: 100%;" data-src="https://youtu.be/PTsengp9CQ8&autoplay=true">
+        <div class="embed-responsive embed-responsive-16by9 player" data-property="{videoURL:'PTsengp9CQ8',containment:'self',mute:true,showControls: false, stopMovieOnBlur:false,showYTLogo: false, quality: 'hd1080',autoPlay:true,loop:true,opacity:1}">
+          <div class="video-caption">
+            <h5><i class="fa fa-circle"></i> DIDI & ANI</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-7 mx-auto text-center">
+          <div class="countdown">
+            <div id="clock"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="heading">
+        <h2>بِسْمِ اللّهِ الرَّحْمَنِ الرَّحِيْمِ</h2>
+        <p>“Jika ada manusia belum hidup bersama pasangannya, berarti hidupnya akan timpang dan tidak berjalan sesuai dengan ketetapan Allah SWT dan orang yang menikah berarti melengkapi agamanya, sabda Rasulullah SAW: "Barangsiapa diberi Allah seorang istri yang sholihah, sesungguhnya telah ditolong separoh agamanya. Dan hendaklah bertaqwa kepada Allah separoh lainnya.” (HR. Baihaqi).</p>
+        <h4>SUPRIADY DJUFRI (DIDI) & HAFRIANI HAFID. S.Pd (ANI)</h4>
+        <h5>AKAD NIKAH</h5>
+          <p>19 OKTOBER 2019 JAM 11.00 WIB<br>
+          LOKASI : DI TALA DESA BAROMBONG
+        </p>
+
+        <h5>RESEPSI</h5>
+        <p>20 OKTOBER 2019 SAMPAI SELESAI<br>
+          LOKASI : JALAN ABD.AZIS (KASUARA LAMA)
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="image-s">
+    <img src="img/didi.png" alt="">
+  </div>
+
+  <!-- /footer -->
+
+  <!-- vendor js -->
+  <script src="plugins/jquery/jquery-3.2.1.min.js"></script>
+  <script src="plugins/popper/popper.min.js"></script>
+  <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+
+  <!-- plugins js -->
+  <script src="plugins/ytplayer/jquery.mb.YTPlayer.min.js"></script>
+  <script src="plugins/owl-carousel/js/owl.carousel.min.js"></script>
+
+
+
+
+
+<script src="conter/dist/jquery.countdown.min.js"></script>
+<script type="text/javascript">
+(function($) {
+"use strict";
+
+$(".player").mb_YTPlayer();
+
+
+// CountDown
+$('#clock').countdown('2019/10/20', function(event) {
+  var $this = $(this).html(event.strftime('' +
+    '<div><span>%D</span> days </div> ' +
+    '<div><span>%H</span> hours </div> ' +
+    '<div><span>%M</span> min </div> ' +
+    '<div><span>%S</span> sec</div> '));
+});
+})(jQuery);
+</script>
+
+  <!-- theme js -->
+  <script src="js/theme.min.js"></script>
+</body>
+</html>
